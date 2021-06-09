@@ -24,7 +24,7 @@ cat = [1 3 2 2 3 1 1 2 3 3 2 1];
      % multidimensional arrays
 % (.) distinguishes array operations from matrix operations which only
      % matters for .* and ./
-% an array is a data structure whereas a matrix is a mathematical concept
+% an array is a data structure whereas a matrix is a mathematical concept 
 
 %% Basic functions
 
@@ -87,10 +87,11 @@ m1 = [5 7 8; 0 1 9; 4 3 6];
 m2 = [1 2 3; 1 2 3; 1 2 3];
 m3 = m1-m2
 
-% You can multiply and divide corresponding values:
+% You can multiply and divide corresponding values (e.g., Hadamard product):
 v4 = v1.*v2
 m4 = m1./m2
 m4*8
+
 % You can compute power:
 m5 = m1.^2
 
@@ -126,3 +127,12 @@ A(1,:)
        end
    end
 
+
+%% Notes for edits
+% - Remove "Nesting" -- we haven't gotten to functions yet; when I said "nesting", I meant things like arrays within structure arrays
+% - Add reminder that Matlab indexes starting from 1, not zero!  
+% - This line doesn't make sense as written, because already said that a matrix is a type of array: "an array is a data structure whereas a matrix is a mathematical concept"
+% - Show data structure that stores non-numeric values (maybe called structure array? Cell array? What's the difference?)
+% - Come up with practice problems
+% - need to mention true matrix multiplication--CRITICAL
+% - Maybe show picture for element-wise multiplication?
